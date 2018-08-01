@@ -1,3 +1,11 @@
 #/bin/bash
 
+
+# Install docker on debian script
+# Copyright (C) 2016 Cybert79 - All Rights Reserved
+# Permission to copy and modify is granted under the gnu license
+# Last revised 01/08/2018
+
+
+
 apt-get remove docker docker-engine docker.io -y && apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common sudo screen -y && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && apt-get update && apt-get install docker-ce -y
