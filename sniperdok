@@ -1,0 +1,8 @@
+#/bin/bash
+
+# Script to run sniper from the cli when sniper is installed via docker 
+# Docker image installed: docker pull menzo/sn1per-docker
+# Copyright (C) 2016 Cybert79 - All Rights Reserved
+# Permission to copy and modify is granted under the gnu license
+# Last revised 01/08/2018
+docker run --rm -ti menzo/sn1per-docker sniper $*
